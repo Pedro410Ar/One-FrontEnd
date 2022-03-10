@@ -9,4 +9,4 @@ A la fecha el proyecto se está desarrollando aún y el mismo tendrá actualizac
 Los lenguajes utilizados son HTML, CSS y JS, y se utilizó Visual Studio Code como Editor de Código. 
 Tambien se utilizaron iconos de la web https://iconos8.es/.
 
-Actualmente, se puede ver la pagina en la sección Pages ed GitHub, en https://pedro410ar.github.io/One-FrontEnd/
+Actualmente, se puede ver la pagina en la sección Pages de GitHub, en https://pedro410ar.github.io/One-FrontEnd/
