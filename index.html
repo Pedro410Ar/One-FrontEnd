@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Pedro Arruvito</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css"> 
+    <link rel="stylesheet" href="./css/form.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +24,8 @@
 
         <section>
             <h2 id="portfolio"> &#128640 &nbsp PORTFOLIO </h2>
-
-                                 
-            <nav>
+            
+            <nav >
                 <ul>
                     <li> <a href="index.html#about">Sobre mi </a> </li>
                     <li> <a href="index.html#ancla-skills">Skills</a></li>
@@ -33,11 +34,8 @@
                     <li> <a href="index.html#ancla-proyectos">Proyectos</a></li>
                     <li> <a href="index.html#ancla-contacto">Contacto</a></li>
                 </ul>
-            </nav>   
+            </nav>  
             
-            
-           
-
         </section>              
 
     </header>
@@ -60,17 +58,21 @@
 
                 <img class="foto-perfil" src="img/fotoperfil2.jpeg" alt="Foto autor">  
                         
-                        
-                <p> Hola, mi nombre es Pedro y vivo en Buenos Aires, Argentina. </p>
+                 <div class="texto-perfil">
+                    <p> Hola, mi nombre es Pedro y vivo en Buenos Aires, Argentina. </p>
                     
-                <p> Luego de haber realizado una carrera universitaria en Abogacia, area donde pude desarrollarme laboralmente por más de 15 años, desde hace varios meses decidí iniciar una nueva etapa laboral y aprender programación. </p>
-
-                <p>Actualmente me encuentro perfeccionando mis conocimientos en programación en el Programa ORACLE NEXT EDUCATION de Alura.</p>
-
+                    <p> Luego de haber realizado una carrera universitaria en Abogacia, area donde me desarrollé laboralmente por más de 15 años, desde hace varios meses decidí iniciar una nueva etapa laboral y aprender programación. </p>
+    
+                    <p>Actualmente me encuentro perfeccionando mis conocimientos en programación en el Programa ORACLE NEXT EDUCATION de Alura.</p>
+                 </div>       
+               
                 <img class="firma" src="https://img.icons8.com/officel/80/000000/signature.png"/>
 
             </div>
-
+            
+                <!--
+                <a href="index.html#portfolio"><img src="https://img.icons8.com/fluency/48/000000/present-to-all.png"/> </a>
+                -->
         </section>
       
         <section id="ancla-skills">
@@ -98,8 +100,6 @@
                     <li> <img src="https://img.icons8.com/office/80/000000/groups.png"/>
                         <p>IGUALDAD DE GENERO</p>
                     </li>
-                  
-                    
                 </ul>
                 
 
@@ -122,10 +122,10 @@
                     </li>
                     <li>
                         <img src="https://img.icons8.com/ultraviolet/80/000000/reading-ebook.png"/>
-                        <p>Leer Tendencias, Economía y Medioambiente</p>
+                        <p>Leer sobre Tendencias y Medioambiente</p>
                     </li>
                 </ul>
-            </div>                         
+               </div>                         
            
         </section>
         
@@ -166,10 +166,9 @@
                 <li><img src="https://img.icons8.com/ultraviolet/80/000000/university.png"/>
                     <p>Abogacia</p>
                     <p>Universidad de Buenos Aires</p>
-                </li>               
-                                
+                </li>                             
             </ul>
-           
+            
         </section>
 
 
@@ -233,8 +232,8 @@
                 </li>
 
                 <li> 
-                    <h4> pagina </h4>
-                    <img class="imagen-proyecto" src="#" width="250" height="180" alt="">
+                    <h4> Elección de Tarjetas Prepagas </h4>
+                    <img class="imagen-proyecto" src="img/tarjetas.PNG" width="250" height="180" alt="">
                     <p>Pagina web donde se aplicó HTML, CSS y JS</p>
                     <a href="#" target="_blank" class="btn btn-primary">Ver Proyecto</a>
                 </li>
@@ -245,34 +244,36 @@
                     <p>Pagina web donde se aplicó HTML, CSS y JS</p>
                     <a href="#" target="_blank" class="btn btn-primary">Ver Proyecto</a>
                 </li>
-
             </ul>
         </section>
 
         <section id="ancla-contacto">                 
             <div>
-                <form action="">
+                <form class="formulario" name="formulario">
 
                 <h1> &#128640 Contacto</h1>
                 <p>Si quieres contactarme, completa el formulario por favor</p> 
 
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Nombre/Name" required>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" >
         
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="tunombre@dominio.com" required>
+                    <input type="email" name="email" id="email" placeholder="tunombre@dominio.com" >
         
                     <label for="asunto">Asunto</label>
-                    <input type="text" id="asunto" required>
+                    <input type="text" name="asunto" id="asunto" minlength="3" maxlength="50">
         
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" cols="70" rows="10" class="input-padron" required ></textarea>
+                    <textarea id="mensaje" name="mensaje" cols="70" rows="10" class="input-padron" maxlength="300"></textarea>
     
                         
-                    <input type="submit" value="Enviar" class="boton-enviar" >
-    
+                    <button type="submit" value="Enviar" id="boton-enviar" class="boton-enviar">Enviar</button>
+                   
+                  
+
+   
                 </form> 
-            </div>                
+            </div>     
         </section>
         
     </main>
@@ -290,5 +291,7 @@
                 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> </h3>
     </footer>      
         
+    <script src="js/formulario.js"></script>
+    
 </body>
 </html>
