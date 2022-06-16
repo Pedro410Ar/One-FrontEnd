@@ -1,5 +1,5 @@
 # PORTFOLIO 
-<img width=900 height=400 src="https://github.com/Pedro410Ar/One-FrontEnd/blob/master/img/portfolio.png">
+<img width=1000 height=450 src="https://github.com/Pedro410Ar/One-FrontEnd/blob/master/img/portfolio.png">
 
 
 Inicio Challenge de Ruta FrontEnd, en el Programa One de Alura para Oracle.
